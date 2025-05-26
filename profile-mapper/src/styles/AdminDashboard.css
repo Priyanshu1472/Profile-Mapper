@@ -1,6 +1,3 @@
-/* Admin Dashboard Styles */
-
-/* Base styles */
 .dashboard-container {
     min-height: 100vh;
     background-color: #f9fafb;
@@ -704,7 +701,6 @@
     gap: 1rem;
   }
   
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .dashboard-container {
       padding: 1rem;
@@ -741,7 +737,6 @@
     }
   }
   
-  /* Utility classes for text colors matching status */
   .text-blue-600 { color: #2563eb; }
   .text-green-600 { color: #059669; }
   .text-red-600 { color: #dc2626; }

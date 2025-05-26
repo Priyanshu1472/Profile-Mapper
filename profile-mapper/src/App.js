@@ -42,10 +42,11 @@ function MainApp() {
     const searchLower = searchTerm.toLowerCase();
     return sampleProfiles.filter(
       (profile) =>
-        profile.name.toLowerCase().includes(searchLower) ||
-        profile.description.toLowerCase().includes(searchLower)
+        (profile.name?.toLowerCase() || "").includes(searchLower) ||
+        (profile.description?.toLowerCase() || "").includes(searchLower)
     );
-  }, [searchTerm]);
+  }
+, [searchTerm]);
 
   return (
     <>
